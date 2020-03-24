@@ -7,7 +7,7 @@ $form = array(
     'email_message' => 'Un nouveau message de &quot;La Voie du Centre&quot;...',
     'success_redirect' => '',
     'email' => array(
-        'from' => '',
+        'from' => 'fcoulombe9@gmail.com',
         'to' => 'info@francoiscoulombe.com'
     ),
     'fields' => array(
