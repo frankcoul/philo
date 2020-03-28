@@ -116,7 +116,18 @@ class FormProcessor
             case 'string':
             case 'tel':
             case 'email':
-                return $this->_encodeValue($value);
+                $returnValues = '';
+                if (is_array($value)) {
+                    foreach ($value as $key => $val) {
+                        $returnValues .= $this->_encodeValue($val);
+                        if ($key !== count($value) - 1) {
+                            $returnValues .= ', ';
+                        }
+                    }
+                } else {
+                    $returnValues = $this->_encodeValue($value);
+                }
+                return $returnValues;
             default:
                 die($this->_getErrorResponse(sprintf($this->_messages['invalid_field_type'], $properties['type'])));
         }
