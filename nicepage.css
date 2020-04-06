@@ -4367,10 +4367,10 @@ a {
 .u-form .u-form-group.u-form-checkbox {
   display: flex;
 }
-.u-form .u-form-group.u-form-checkbox .u-checkbox {
+.u-form .u-form-group.u-form-checkbox input[type="checkbox"] {
   float: left;
 }
-.u-form .u-form-group.u-form-checkbox .u-checkbox-label {
+.u-form .u-form-group.u-form-checkbox label.u-label {
   margin-left: 5px;
 }
 .u-form .u-form-horizontal .u-form-group.u-form-checkbox,
@@ -4378,8 +4378,7 @@ a {
   -ms-grid-row-align: center;
       align-items: center;
 }
-.u-form .u-form-horizontal .u-checkbox,
-.u-form .u-form-horizontal .u-agree-checkbox {
+.u-form .u-form-horizontal input[type="checkbox"] {
   width: 13px;
   max-width: 13px;
   margin-bottom: 3px;
@@ -15546,6 +15545,17 @@ a.pswp__share--download:hover {
 }
 .u-cookies-consent.show {
   display: block;
+}
+.u-gallery {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[3];
+      grid-template-columns: repeat(3, auto);
+}
+.u-gallery-item {
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
 .u-carousel {
   position: relative;
@@ -27133,7 +27143,7 @@ a.u-link.u-text-hover-grey-90:hover {
 .u-footer .u-group-1 {min-height: 63px; width: 570px; margin: 35px auto}
 .u-footer .u-container-layout-1 {padding-left: 60px; padding-right: 60px}
 .u-footer .u-text-1 {margin: 5px 0} 
-@media (max-width: 1199px){ .u-footer .u-group-1 {height: auto; width: 470px}
+@media (max-width: 1199px){ .u-footer .u-group-1 {width: 470px}
 .u-footer .u-container-layout-1 {padding-left: 49px; padding-right: 49px} }
 @media (max-width: 991px){ .u-footer .u-group-1 {width: 360px}
 .u-footer .u-container-layout-1 {padding-left: 38px; padding-right: 38px} }
